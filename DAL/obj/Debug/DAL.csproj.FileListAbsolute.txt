@@ -1,0 +1,14 @@
+E:\ASP.NET\DAL\bin\Debug\DAL.dll.config
+E:\ASP.NET\DAL\bin\Debug\DAL.dll
+E:\ASP.NET\DAL\bin\Debug\DAL.pdb
+E:\ASP.NET\DAL\bin\Debug\EntityFramework.dll
+E:\ASP.NET\DAL\bin\Debug\EntityFramework.SqlServer.dll
+E:\ASP.NET\DAL\bin\Debug\EntityFramework.xml
+E:\ASP.NET\DAL\bin\Debug\EntityFramework.SqlServer.xml
+E:\ASP.NET\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+E:\ASP.NET\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+E:\ASP.NET\DAL\obj\Debug\DAL.csproj.CopyComplete
+E:\ASP.NET\DAL\obj\Debug\DAL.dll
+E:\ASP.NET\DAL\obj\Debug\DAL.pdb
+E:\ASP.NET\DAL\obj\Debug\DAL.Migrations.DBInitialize.resources
+E:\ASP.NET\DAL\obj\Debug\DAL.csproj.GenerateResource.cache
