@@ -58,6 +58,31 @@
                 });
 
             }
+            for (int i = 1; i <= 30; i++)
+            {
+                context.Activities.AddOrUpdate(new Models.Activity
+                {
+                    Id = i,
+                    Activity_Title = Guid.NewGuid().ToString().Substring(0, 10),
+                    Activity_Description = Guid.NewGuid().ToString(),
+                    Date = DateTime.Now,
+                    CreatedBy = "User-" + random.Next(1, 21),
+
+
+                });
+            }
+            for (int i = 1; i <= 90; i++)
+            {
+                context.Feedbacks.AddOrUpdate(new Models.Feedback
+                {
+                    Id = i,
+                    FeedbackText = Guid.NewGuid().ToString().Substring(0, 10),
+                    ActivityId = random.Next(1, 31),
+                    Time = DateTime.Now,
+                    FeedbackBy = "User-" + random.Next(1, 21),
+                });
+
+            }
         }
     }
 }
