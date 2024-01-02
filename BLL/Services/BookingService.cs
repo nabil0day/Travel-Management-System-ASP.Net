@@ -13,6 +13,24 @@ namespace BLL.Services
 {
     public class BookingService
     {
+        public static bool Create(BookingDTO bookingDTO)
+        {
+            var booking = new Booking();
+            booking.Id = bookingDTO.Id;
+            booking.Booking_Title = bookingDTO.Booking_Title;
+            booking.Booking_Descripion = bookingDTO.Booking_Descripion;
+            booking.BookedBy = bookingDTO.BookedBy;
+            booking.Date = bookingDTO.Date;
+
+            return DataAccessFactory.BookingData().Create(booking);
+
+        }
+
+        public static bool Delete(int id)
+        {
+            return DataAccessFactory.BookingData().Delete(id);
+        }
+
         public static List<BookingDTO> Get()
         {
             var data = DataAccessFactory.BookingData().Read();
@@ -24,6 +42,7 @@ namespace BLL.Services
             var mapped = mapper.Map<List<BookingDTO>>(data);
             return mapped;
         }
+
         public static BookingDTO Get(int id)
         {
             var data = DataAccessFactory.BookingData().Read(id);
@@ -35,6 +54,7 @@ namespace BLL.Services
             var mapped = mapper.Map<BookingDTO>(data);
             return mapped;
         }
+
         public static BookingSuggestionDTO GetwithSuggestions(int id)
         {
             var data = DataAccessFactory.BookingData().Read(id);
@@ -48,5 +68,16 @@ namespace BLL.Services
             return mapped;
         }
 
+        public static bool Update(BookingDTO bookingDTO)
+        {
+            var booking = new Booking();
+            booking.Id = bookingDTO.Id;
+            booking.Booking_Title = bookingDTO.Booking_Title;
+            booking.Booking_Descripion = bookingDTO.Booking_Descripion;
+            booking.BookedBy = bookingDTO.BookedBy;
+            booking.Date = bookingDTO.Date;
+
+            return DataAccessFactory.BookingData().Update(booking);
+        }
     }
 }
