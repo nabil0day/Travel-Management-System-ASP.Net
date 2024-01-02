@@ -19,4 +19,4 @@ This project implements a Travel Management System using a 3-tier architecture a
 - Entity Framework (assuming from DB-First approach)
   
 
-*Will work for the final version of it with Frontend and required features*
+*(Will work for the final version of it with Frontend and required features*)
