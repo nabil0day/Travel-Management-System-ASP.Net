@@ -1,4 +1,4 @@
-# Travel Management System - 3 Tier Architecture with Web API
+# Travel Management System - 3-Tier Architecture with Web API
 
 This project implements a Travel Management System using a 3-tier architecture and Web API. It is developed using C#, ASP.NET, and follows a DB-First approach for database management. The project emphasizes the implementation of SOLID principles for robust and maintainable code.
 
@@ -16,7 +16,7 @@ This project implements a Travel Management System using a 3-tier architecture a
 
 - C#
 - ASP.NET
-- Entity Framework (assuming from DB-First approach)
+- Entity Framework
   
 
 *(Will work for the final version of it with Frontend and required features*)
