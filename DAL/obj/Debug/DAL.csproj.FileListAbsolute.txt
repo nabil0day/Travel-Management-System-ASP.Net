@@ -12,3 +12,11 @@ E:\ASP.NET\DAL\obj\Debug\DAL.dll
 E:\ASP.NET\DAL\obj\Debug\DAL.pdb
 E:\ASP.NET\DAL\obj\Debug\DAL.Migrations.DBInitialize.resources
 E:\ASP.NET\DAL\obj\Debug\DAL.csproj.GenerateResource.cache
+E:\ASP.NET\DAL\obj\Debug\DAL.Migrations.AddNewEntity.resources
+E:\ASP.NET\DAL\obj\Debug\DAL.Migrations.ModifyExistingEntity.resources
+E:\ASP.NET\DAL\obj\Debug\DAL.Migrations.UpdateNewEntityNamedReviewComplain.resources
+E:\ASP.NET\DAL\obj\Debug\DAL.Migrations.UpdateEntity.resources
+E:\ASP.NET\DAL\obj\Debug\DAL.Migrations.UpdateExistingEntity.resources
+E:\ASP.NET\DAL\obj\Debug\DAL.Migrations.ModifyExistingEntity1.resources
+E:\ASP.NET\DAL\obj\Debug\DAL.Migrations.ModifyExistingEntityAgain.resources
+E:\ASP.NET\DAL\obj\Debug\DAL.Migrations.Modify.resources

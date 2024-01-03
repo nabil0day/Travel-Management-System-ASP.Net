@@ -11,7 +11,7 @@ namespace BLL.DTOs
     {
         public int Id { get; set; }
         public string FeedbackText { get; set; }
-        public DateTime Time { get; set; }
+        public DateTime Time { get; set; }   
         public string FeedbackBy { get; set; }
         public int ActivityId { get; set; }
     }

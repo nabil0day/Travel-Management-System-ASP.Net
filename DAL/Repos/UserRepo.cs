@@ -8,8 +8,16 @@ using System.Threading.Tasks;
 
 namespace DAL.Repos
 {
-    internal class UserRepo : Repo, IRepo<User, string, User>
+    internal class UserRepo : Repo, IRepo<User, string, User>, IAuth<bool>
     {
+        public bool Authenticate(string username, string password)
+        {
+            var data =  db.Users.FirstOrDefault(u=>u.Uname.Equals(username) && password.Equals(password));
+            if(data!=null) return true;
+            return false;
+
+        }
+
         public User Create(User obj)
         {
             db.Users.Add(obj);
@@ -37,8 +45,7 @@ namespace DAL.Repos
         public User Update(User obj)
         {
             var ex = Read(obj.Uname);
-            db.Entry(ex).CurrentValues.SetValues(obj); return obj;
-            return null;
+            db.Entry(ex).CurrentValues.SetValues(obj);return obj;
 
         }
     }

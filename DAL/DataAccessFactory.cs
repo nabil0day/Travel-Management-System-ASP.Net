@@ -24,5 +24,25 @@ namespace DAL
         {
             return new UserRepo();
         }
+        public static IRepo<Activity, int, bool> ActivityData()
+        {
+            return new ActivityRepo();
+        }
+        public static IRepo<Feedback, int, bool> FeedbackData()
+        {
+            return new FeedbackRepo();
+        }
+        public static IRepo<Review, int, bool> ReviewData()
+        {
+            return new ReviewRepo();
+        }
+        public static IRepo<Complain, int, bool> ComplainData()
+        {
+            return new ComplainRepo();
+        }
+        public static IAuth<bool>AuthData()
+        {
+            return new UserRepo();
+        }
     }
 }

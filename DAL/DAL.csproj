@@ -52,19 +52,60 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataAccessFactory.cs" />
+    <Compile Include="Interfaces\IAuth.cs" />
     <Compile Include="Interfaces\IRepo.cs" />
     <Compile Include="Migrations\202312280713274_DBInitialize.cs" />
     <Compile Include="Migrations\202312280713274_DBInitialize.designer.cs">
       <DependentUpon>202312280713274_DBInitialize.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202312300745398_AddNewEntity.cs" />
+    <Compile Include="Migrations\202312300745398_AddNewEntity.designer.cs">
+      <DependentUpon>202312300745398_AddNewEntity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202312301510103_ModifyExistingEntity.cs" />
+    <Compile Include="Migrations\202312301510103_ModifyExistingEntity.designer.cs">
+      <DependentUpon>202312301510103_ModifyExistingEntity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202312311717265_UpdateNewEntityNamedReviewComplain.cs" />
+    <Compile Include="Migrations\202312311717265_UpdateNewEntityNamedReviewComplain.designer.cs">
+      <DependentUpon>202312311717265_UpdateNewEntityNamedReviewComplain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202312311725394_UpdateEntity.cs" />
+    <Compile Include="Migrations\202312311725394_UpdateEntity.designer.cs">
+      <DependentUpon>202312311725394_UpdateEntity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202312311732319_UpdateExistingEntity.cs" />
+    <Compile Include="Migrations\202312311732319_UpdateExistingEntity.designer.cs">
+      <DependentUpon>202312311732319_UpdateExistingEntity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202401011259235_ModifyExistingEntity1.cs" />
+    <Compile Include="Migrations\202401011259235_ModifyExistingEntity1.designer.cs">
+      <DependentUpon>202401011259235_ModifyExistingEntity1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202401011321232_ModifyExistingEntityAgain.cs" />
+    <Compile Include="Migrations\202401011321232_ModifyExistingEntityAgain.designer.cs">
+      <DependentUpon>202401011321232_ModifyExistingEntityAgain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202401011335324_Modify.cs" />
+    <Compile Include="Migrations\202401011335324_Modify.designer.cs">
+      <DependentUpon>202401011335324_Modify.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\Activity.cs" />
     <Compile Include="Models\Booking.cs" />
+    <Compile Include="Models\Complain.cs" />
+    <Compile Include="Models\Review.cs" />
+    <Compile Include="Models\Feedback.cs" />
     <Compile Include="Models\Suggestion.cs" />
     <Compile Include="Models\TravelContext.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repos\ActivityRepo.cs" />
     <Compile Include="Repos\BookingRepo.cs" />
+    <Compile Include="Repos\ComplainRepo.cs" />
+    <Compile Include="Repos\FeedbackRepo.cs" />
     <Compile Include="Repos\Repo.cs" />
+    <Compile Include="Repos\ReviewRepo.cs" />
     <Compile Include="Repos\SuggestionRepo.cs" />
     <Compile Include="Repos\UserRepo.cs" />
   </ItemGroup>
@@ -75,6 +116,30 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202312280713274_DBInitialize.resx">
       <DependentUpon>202312280713274_DBInitialize.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202312300745398_AddNewEntity.resx">
+      <DependentUpon>202312300745398_AddNewEntity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202312301510103_ModifyExistingEntity.resx">
+      <DependentUpon>202312301510103_ModifyExistingEntity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202312311717265_UpdateNewEntityNamedReviewComplain.resx">
+      <DependentUpon>202312311717265_UpdateNewEntityNamedReviewComplain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202312311725394_UpdateEntity.resx">
+      <DependentUpon>202312311725394_UpdateEntity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202312311732319_UpdateExistingEntity.resx">
+      <DependentUpon>202312311732319_UpdateExistingEntity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202401011259235_ModifyExistingEntity1.resx">
+      <DependentUpon>202401011259235_ModifyExistingEntity1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202401011321232_ModifyExistingEntityAgain.resx">
+      <DependentUpon>202401011321232_ModifyExistingEntityAgain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202401011335324_Modify.resx">
+      <DependentUpon>202401011335324_Modify.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
